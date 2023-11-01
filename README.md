@@ -1,1 +1,4 @@
-# Aldos-Gate
+# Aldo's Gate
+Welcome to Aldo's Gate! Aldo the hacker has trapped you in his computer simulation. Can you hack the gate and escape!?!
+## Overview 
+Aldo's Gate is a unity version of a board game I designed in University. It involves 3-5 players who are each assigned different roles. Players take turns placing 'cells' onto the game board trying to connect opposite sides. There are 3 rounds and 3 different roles. Users are trying to create safe routes between the 3 different sides. Agents are trying to stop them to trap them in the simulation. The anarchist is a special role which is trying to make a player run out of cells. If the User's win 2 or more rounds they escape the simulation and win the game. If the Agents win 2 or more rounds they trap the users in the simulation. If a player runs out of cells the anarchist wins the game. 
