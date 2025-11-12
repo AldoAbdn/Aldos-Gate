@@ -9435,6 +9435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05903a013a1829c4e8fa532d65d68500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  Board: {fileID: 419203990}
   Players: 2
   RoundText: {fileID: 1814492862}
   PlayerText: {fileID: 375798717}
