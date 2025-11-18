@@ -225,7 +225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &4398021
 Rigidbody2D:
   serializedVersion: 5
@@ -265,7 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &4398023
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -408,7 +410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &39832064
 Rigidbody2D:
   serializedVersion: 5
@@ -448,7 +451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &39832066
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -591,7 +595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &48693452
 Rigidbody2D:
   serializedVersion: 5
@@ -631,7 +636,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &48693454
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -774,7 +780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &91803657
 Rigidbody2D:
   serializedVersion: 5
@@ -814,7 +821,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &91803659
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -957,7 +965,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &112193871
 Rigidbody2D:
   serializedVersion: 5
@@ -997,7 +1006,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &112193873
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1140,7 +1150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &129999095
 Rigidbody2D:
   serializedVersion: 5
@@ -1180,7 +1191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &129999097
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1323,7 +1335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &131863614
 Rigidbody2D:
   serializedVersion: 5
@@ -1363,7 +1376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &131863616
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1411,10 +1425,9 @@ GameObject:
   - component: {fileID: 162755015}
   - component: {fileID: 162755016}
   - component: {fileID: 162755018}
-  - component: {fileID: 162755019}
   - component: {fileID: 162755020}
-  - component: {fileID: 162755021}
   - component: {fileID: 162755022}
+  - component: {fileID: 162755023}
   m_Layer: 0
   m_Name: Hexagon Point Top (49)
   m_TagString: Untagged
@@ -1507,19 +1520,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162755014}
   m_CullTransparentMesh: 1
---- !u!114 &162755019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162755014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &162755020
 Rigidbody2D:
   serializedVersion: 5
@@ -1547,19 +1547,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &162755021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162755014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &162755022
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1596,6 +1583,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &162755023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162755014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 1
+  Round: 2
 --- !u!1 &186491960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,7 +1705,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &186491964
 Rigidbody2D:
   serializedVersion: 5
@@ -1742,7 +1746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &186491966
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1885,7 +1890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &232200958
 Rigidbody2D:
   serializedVersion: 5
@@ -1925,7 +1931,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &232200960
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2068,7 +2075,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &263505912
 Rigidbody2D:
   serializedVersion: 5
@@ -2108,7 +2116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &263505914
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2155,10 +2164,9 @@ GameObject:
   m_Component:
   - component: {fileID: 318046366}
   - component: {fileID: 318046367}
-  - component: {fileID: 318046368}
   - component: {fileID: 318046369}
-  - component: {fileID: 318046370}
   - component: {fileID: 318046371}
+  - component: {fileID: 318046372}
   m_Layer: 0
   m_Name: Hexagon Point Top (50)
   m_TagString: Untagged
@@ -2239,19 +2247,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &318046368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 318046365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &318046369
 Rigidbody2D:
   serializedVersion: 5
@@ -2279,19 +2274,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &318046370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 318046365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &318046371
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2328,6 +2310,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &318046372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318046365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 1
+  Round: 2
 --- !u!1 &375798715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,7 +2568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &385452265
 Rigidbody2D:
   serializedVersion: 5
@@ -2610,7 +2609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &385452267
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2753,7 +2753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &417450059
 Rigidbody2D:
   serializedVersion: 5
@@ -2793,7 +2794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &417450061
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3022,7 +3024,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &425365782
 Rigidbody2D:
   serializedVersion: 5
@@ -3062,7 +3065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &425365784
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3109,10 +3113,9 @@ GameObject:
   m_Component:
   - component: {fileID: 481592280}
   - component: {fileID: 481592281}
-  - component: {fileID: 481592282}
   - component: {fileID: 481592283}
-  - component: {fileID: 481592284}
   - component: {fileID: 481592285}
+  - component: {fileID: 481592286}
   m_Layer: 0
   m_Name: Hexagon Point Top (55)
   m_TagString: Untagged
@@ -3193,19 +3196,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &481592282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481592279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &481592283
 Rigidbody2D:
   serializedVersion: 5
@@ -3233,19 +3223,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &481592284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481592279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &481592285
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3282,6 +3259,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &481592286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481592279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 0
+  Round: 2
 --- !u!1 &495478967
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,10 +3285,9 @@ GameObject:
   m_Component:
   - component: {fileID: 495478968}
   - component: {fileID: 495478969}
-  - component: {fileID: 495478970}
   - component: {fileID: 495478971}
-  - component: {fileID: 495478972}
   - component: {fileID: 495478973}
+  - component: {fileID: 495478974}
   m_Layer: 0
   m_Name: Hexagon Point Top (47)
   m_TagString: Untagged
@@ -3376,19 +3368,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &495478970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495478967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &495478971
 Rigidbody2D:
   serializedVersion: 5
@@ -3416,19 +3395,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &495478972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495478967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &495478973
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3465,6 +3431,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &495478974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495478967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 0
+  Round: 3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3708,7 +3690,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &586789665
 Rigidbody2D:
   serializedVersion: 5
@@ -3748,7 +3731,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &586789667
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3891,7 +3875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &596465697
 Rigidbody2D:
   serializedVersion: 5
@@ -3931,7 +3916,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &596465699
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4158,7 +4144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &645296156
 Rigidbody2D:
   serializedVersion: 5
@@ -4198,7 +4185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &645296158
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4341,7 +4329,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &713787038
 Rigidbody2D:
   serializedVersion: 5
@@ -4381,7 +4370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &713787040
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4524,7 +4514,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &728567298
 Rigidbody2D:
   serializedVersion: 5
@@ -4564,7 +4555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &728567300
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4707,7 +4699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &729327103
 Rigidbody2D:
   serializedVersion: 5
@@ -4747,7 +4740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &729327105
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4890,7 +4884,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &889962184
 Rigidbody2D:
   serializedVersion: 5
@@ -4930,7 +4925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &889962186
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4977,10 +4973,9 @@ GameObject:
   m_Component:
   - component: {fileID: 931911635}
   - component: {fileID: 931911636}
-  - component: {fileID: 931911637}
   - component: {fileID: 931911638}
-  - component: {fileID: 931911639}
   - component: {fileID: 931911640}
+  - component: {fileID: 931911641}
   m_Layer: 0
   m_Name: Hexagon Point Top (36)
   m_TagString: Untagged
@@ -5061,19 +5056,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &931911637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931911634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &931911638
 Rigidbody2D:
   serializedVersion: 5
@@ -5101,19 +5083,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &931911639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931911634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &931911640
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5150,6 +5119,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &931911641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931911634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 0
+  Round: 3
 --- !u!1 &940124000
 GameObject:
   m_ObjectHideFlags: 0
@@ -5160,10 +5145,9 @@ GameObject:
   m_Component:
   - component: {fileID: 940124001}
   - component: {fileID: 940124002}
-  - component: {fileID: 940124003}
   - component: {fileID: 940124004}
-  - component: {fileID: 940124005}
   - component: {fileID: 940124006}
+  - component: {fileID: 940124007}
   m_Layer: 0
   m_Name: Hexagon Point Top (52)
   m_TagString: Untagged
@@ -5244,19 +5228,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &940124003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940124000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &940124004
 Rigidbody2D:
   serializedVersion: 5
@@ -5284,19 +5255,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &940124005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940124000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &940124006
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5333,6 +5291,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &940124007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940124000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 1
+  Round: 2
 --- !u!1 &949318222
 GameObject:
   m_ObjectHideFlags: 0
@@ -5439,7 +5413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &949318226
 Rigidbody2D:
   serializedVersion: 5
@@ -5479,7 +5454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &949318228
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5622,7 +5598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &965672286
 Rigidbody2D:
   serializedVersion: 5
@@ -5662,7 +5639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &965672288
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5805,7 +5783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &974946053
 Rigidbody2D:
   serializedVersion: 5
@@ -5845,7 +5824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &974946055
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5892,10 +5872,9 @@ GameObject:
   m_Component:
   - component: {fileID: 986292964}
   - component: {fileID: 986292965}
-  - component: {fileID: 986292966}
   - component: {fileID: 986292967}
-  - component: {fileID: 986292968}
   - component: {fileID: 986292969}
+  - component: {fileID: 986292970}
   m_Layer: 0
   m_Name: Hexagon Point Top (21)
   m_TagString: Untagged
@@ -5976,19 +5955,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &986292966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986292963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &986292967
 Rigidbody2D:
   serializedVersion: 5
@@ -6016,19 +5982,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &986292968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986292963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &986292969
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6065,6 +6018,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &986292970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986292963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 0
+  Round: 3
 --- !u!1 &1056835092
 GameObject:
   m_ObjectHideFlags: 0
@@ -6171,7 +6140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1056835096
 Rigidbody2D:
   serializedVersion: 5
@@ -6211,7 +6181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1056835098
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6354,7 +6325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1130909982
 Rigidbody2D:
   serializedVersion: 5
@@ -6394,7 +6366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1130909984
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6441,10 +6414,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1213946647}
   - component: {fileID: 1213946648}
-  - component: {fileID: 1213946649}
   - component: {fileID: 1213946650}
-  - component: {fileID: 1213946651}
   - component: {fileID: 1213946652}
+  - component: {fileID: 1213946653}
   m_Layer: 0
   m_Name: Hexagon Point Top (51)
   m_TagString: Untagged
@@ -6525,19 +6497,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1213946649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213946646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &1213946650
 Rigidbody2D:
   serializedVersion: 5
@@ -6565,19 +6524,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &1213946651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213946646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &1213946652
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6614,6 +6560,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1213946653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213946646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 0
+  Round: 2
 --- !u!1 &1234027874
 GameObject:
   m_ObjectHideFlags: 0
@@ -6624,10 +6586,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1234027875}
   - component: {fileID: 1234027876}
-  - component: {fileID: 1234027877}
   - component: {fileID: 1234027878}
-  - component: {fileID: 1234027879}
   - component: {fileID: 1234027880}
+  - component: {fileID: 1234027881}
   m_Layer: 0
   m_Name: Hexagon Point Top (22)
   m_TagString: Untagged
@@ -6708,19 +6669,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1234027877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1234027874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &1234027878
 Rigidbody2D:
   serializedVersion: 5
@@ -6748,19 +6696,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &1234027879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1234027874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &1234027880
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6797,6 +6732,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1234027881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234027874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 0
+  Round: 1
 --- !u!1 &1276106495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6903,7 +6854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1276106499
 Rigidbody2D:
   serializedVersion: 5
@@ -6943,7 +6895,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1276106501
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6990,10 +6943,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1396705277}
   - component: {fileID: 1396705278}
-  - component: {fileID: 1396705279}
   - component: {fileID: 1396705280}
-  - component: {fileID: 1396705281}
   - component: {fileID: 1396705282}
+  - component: {fileID: 1396705283}
   m_Layer: 0
   m_Name: Hexagon Point Top (33)
   m_TagString: Untagged
@@ -7074,19 +7026,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1396705279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396705276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &1396705280
 Rigidbody2D:
   serializedVersion: 5
@@ -7114,19 +7053,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &1396705281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396705276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &1396705282
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7163,6 +7089,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1396705283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396705276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 0
+  Round: 1
 --- !u!1 &1410920139
 GameObject:
   m_ObjectHideFlags: 0
@@ -7269,7 +7211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1410920143
 Rigidbody2D:
   serializedVersion: 5
@@ -7309,7 +7252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1410920145
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7452,7 +7396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1425335651
 Rigidbody2D:
   serializedVersion: 5
@@ -7492,7 +7437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1425335653
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7635,7 +7581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1431356191
 Rigidbody2D:
   serializedVersion: 5
@@ -7675,7 +7622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1431356193
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7818,7 +7766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1435416640
 Rigidbody2D:
   serializedVersion: 5
@@ -7858,7 +7807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1435416642
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7905,10 +7855,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1446805623}
   - component: {fileID: 1446805624}
-  - component: {fileID: 1446805625}
   - component: {fileID: 1446805626}
-  - component: {fileID: 1446805627}
   - component: {fileID: 1446805628}
+  - component: {fileID: 1446805629}
   m_Layer: 0
   m_Name: Hexagon Point Top (13)
   m_TagString: Untagged
@@ -7989,19 +7938,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1446805625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446805622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &1446805626
 Rigidbody2D:
   serializedVersion: 5
@@ -8029,19 +7965,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &1446805627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446805622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &1446805628
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8078,6 +8001,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1446805629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446805622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 1
+  Round: 1
 --- !u!1 &1511750970
 GameObject:
   m_ObjectHideFlags: 0
@@ -8184,7 +8123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1511750974
 Rigidbody2D:
   serializedVersion: 5
@@ -8224,7 +8164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1511750976
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8271,10 +8212,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1519404856}
   - component: {fileID: 1519404857}
-  - component: {fileID: 1519404858}
   - component: {fileID: 1519404859}
-  - component: {fileID: 1519404860}
   - component: {fileID: 1519404861}
+  - component: {fileID: 1519404862}
   m_Layer: 0
   m_Name: Hexagon Point Top (26)
   m_TagString: Untagged
@@ -8355,19 +8295,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1519404858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519404855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &1519404859
 Rigidbody2D:
   serializedVersion: 5
@@ -8395,19 +8322,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &1519404860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519404855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &1519404861
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8444,6 +8358,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1519404862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519404855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 1
+  Round: 3
 --- !u!1 &1652666039
 GameObject:
   m_ObjectHideFlags: 0
@@ -8454,10 +8384,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1652666040}
   - component: {fileID: 1652666041}
-  - component: {fileID: 1652666042}
   - component: {fileID: 1652666043}
-  - component: {fileID: 1652666044}
   - component: {fileID: 1652666045}
+  - component: {fileID: 1652666046}
   m_Layer: 0
   m_Name: Hexagon Point Top (29)
   m_TagString: Untagged
@@ -8538,19 +8467,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1652666042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652666039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &1652666043
 Rigidbody2D:
   serializedVersion: 5
@@ -8578,19 +8494,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &1652666044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652666039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &1652666045
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8627,6 +8530,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1652666046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652666039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 1
+  Round: 1
 --- !u!1 &1662039879
 GameObject:
   m_ObjectHideFlags: 0
@@ -8637,10 +8556,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1662039880}
   - component: {fileID: 1662039881}
-  - component: {fileID: 1662039882}
   - component: {fileID: 1662039883}
-  - component: {fileID: 1662039884}
   - component: {fileID: 1662039885}
+  - component: {fileID: 1662039886}
   m_Layer: 0
   m_Name: Hexagon Point Top (53)
   m_TagString: Untagged
@@ -8721,19 +8639,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1662039882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662039879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &1662039883
 Rigidbody2D:
   serializedVersion: 5
@@ -8761,19 +8666,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &1662039884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662039879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &1662039885
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8810,6 +8702,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1662039886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662039879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 0
+  Round: 2
 --- !u!1 &1749627129
 GameObject:
   m_ObjectHideFlags: 0
@@ -8820,10 +8728,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1749627130}
   - component: {fileID: 1749627131}
-  - component: {fileID: 1749627132}
   - component: {fileID: 1749627133}
-  - component: {fileID: 1749627134}
   - component: {fileID: 1749627135}
+  - component: {fileID: 1749627136}
   m_Layer: 0
   m_Name: Hexagon Point Top (41)
   m_TagString: Untagged
@@ -8904,19 +8811,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1749627132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749627129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &1749627133
 Rigidbody2D:
   serializedVersion: 5
@@ -8944,19 +8838,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &1749627134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749627129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &1749627135
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8993,6 +8874,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1749627136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749627129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 1
+  Round: 1
 --- !u!1 &1758894029
 GameObject:
   m_ObjectHideFlags: 0
@@ -9099,7 +8996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1758894033
 Rigidbody2D:
   serializedVersion: 5
@@ -9139,7 +9037,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1758894035
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9545,7 +9444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1869352317
 Rigidbody2D:
   serializedVersion: 5
@@ -9585,7 +9485,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1869352319
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9728,7 +9629,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1907264013
 Rigidbody2D:
   serializedVersion: 5
@@ -9768,7 +9670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1907264015
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9911,7 +9814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &1923674694
 Rigidbody2D:
   serializedVersion: 5
@@ -9951,7 +9855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &1923674696
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9998,10 +9903,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2060986827}
   - component: {fileID: 2060986828}
-  - component: {fileID: 2060986829}
   - component: {fileID: 2060986830}
-  - component: {fileID: 2060986831}
   - component: {fileID: 2060986832}
+  - component: {fileID: 2060986833}
   m_Layer: 0
   m_Name: Hexagon Point Top (54)
   m_TagString: Untagged
@@ -10082,19 +9986,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2060986829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060986826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &2060986830
 Rigidbody2D:
   serializedVersion: 5
@@ -10122,19 +10013,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &2060986831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060986826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &2060986832
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10171,6 +10049,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &2060986833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060986826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 1
+  Round: 3
 --- !u!1 &2068419658
 GameObject:
   m_ObjectHideFlags: 0
@@ -10181,10 +10075,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2068419659}
   - component: {fileID: 2068419660}
-  - component: {fileID: 2068419661}
   - component: {fileID: 2068419662}
-  - component: {fileID: 2068419663}
   - component: {fileID: 2068419664}
+  - component: {fileID: 2068419665}
   m_Layer: 0
   m_Name: Hexagon Point Top (14)
   m_TagString: Untagged
@@ -10265,19 +10158,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2068419661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068419658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &2068419662
 Rigidbody2D:
   serializedVersion: 5
@@ -10305,19 +10185,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &2068419663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068419658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &2068419664
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10354,6 +10221,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &2068419665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068419658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 1
+  Round: 3
 --- !u!1 &2088634886
 GameObject:
   m_ObjectHideFlags: 0
@@ -10364,10 +10247,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2088634887}
   - component: {fileID: 2088634888}
-  - component: {fileID: 2088634889}
   - component: {fileID: 2088634890}
-  - component: {fileID: 2088634891}
   - component: {fileID: 2088634892}
+  - component: {fileID: 2088634893}
   m_Layer: 0
   m_Name: Hexagon Point Top (48)
   m_TagString: Untagged
@@ -10448,19 +10330,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2088634889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088634886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
 --- !u!50 &2088634890
 Rigidbody2D:
   serializedVersion: 5
@@ -10488,19 +10357,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &2088634891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088634886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
 --- !u!58 &2088634892
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10537,6 +10393,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &2088634893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088634886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b308ebc8ff370a4b9803ace9e481b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoundTile
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
+  IsStart: 0
+  Round: 1
 --- !u!1 &2099678819
 GameObject:
   m_ObjectHideFlags: 0
@@ -10643,7 +10515,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &2099678823
 Rigidbody2D:
   serializedVersion: 5
@@ -10683,7 +10556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &2099678825
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10929,7 +10803,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 0}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!50 &2114530986
 Rigidbody2D:
   serializedVersion: 5
@@ -10969,7 +10844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
-  gameManager: {fileID: 1835169823}
+  GameManager: {fileID: 0}
+  CurrentPiece: {fileID: 0}
 --- !u!58 &2114530988
 CircleCollider2D:
   m_ObjectHideFlags: 0
