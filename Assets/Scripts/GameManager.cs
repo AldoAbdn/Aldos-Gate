@@ -13,9 +13,7 @@ public class GameManager : MonoBehaviour
     public int Players = 2;
     public TextMeshProUGUI RoundText;
     public TextMeshProUGUI PlayerText;
-    // 2d array to hold board state
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         RoundText.text = "Round: " + currentRound;
@@ -29,7 +27,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         
