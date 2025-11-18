@@ -1,4 +1,5 @@
-using System;
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -7,7 +8,6 @@ public class GameManager : MonoBehaviour
     private int currentRound = 1;
     private int currentPlayer = 1;
     private GameObject[,] boardState = new GameObject[9,9];
-    private Tuple<int, int> center = Tuple.Create(4, 4);
 
     public GameObject Board;
     public int Players = 2;
@@ -57,5 +57,27 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Game Over!");
         // Implement game over logic here
+    }
+
+    private IList<GameObject> GetSurroundingTileGameObjects(GameObject centretile)
+    {
+        Tile centerTileComponent = centretile.GetComponent<Tile>();
+        List<GameObject> surroundingTiles = new List<GameObject>();
+        int X = centerTileComponent.X;
+        int Y = centerTileComponent.Y;
+        for (int x = X - 1; x <= X + 1; x++)
+        {
+            for (int y = Y - 1; y <= Y + 1; y++)
+            {
+                if (x >= 0 && x < 9 && y >= 0 && y < 9)
+                {
+                    if (x != X || y != Y)
+                    {
+                        surroundingTiles.Add(boardState[x, y]);
+                    }
+                }
+            }
+        }
+        return surroundingTiles;
     }
 }
