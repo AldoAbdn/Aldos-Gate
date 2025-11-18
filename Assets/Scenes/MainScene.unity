@@ -649,7 +649,7 @@ MonoBehaviour:
   GameManager: {fileID: 0}
   CurrentPiece: {fileID: 0}
   X: 6
-  Y: 2
+  Y: 1
 --- !u!58 &48693454
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1781,7 +1781,7 @@ MonoBehaviour:
   GameManager: {fileID: 0}
   CurrentPiece: {fileID: 0}
   X: 5
-  Y: 2
+  Y: 1
 --- !u!58 &186491966
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3504,7 +3504,7 @@ MonoBehaviour:
   GameManager: {fileID: 0}
   CurrentPiece: {fileID: 0}
   X: 2
-  Y: 2
+  Y: 1
   IsStart: 0
   Round: 3
 --- !u!1 &519420028
@@ -7948,7 +7948,7 @@ MonoBehaviour:
   GameManager: {fileID: 0}
   CurrentPiece: {fileID: 0}
   X: 4
-  Y: 2
+  Y: 1
 --- !u!58 &1435416642
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10582,7 +10582,7 @@ MonoBehaviour:
   GameManager: {fileID: 0}
   CurrentPiece: {fileID: 0}
   X: 7
-  Y: 2
+  Y: 1
   IsStart: 0
   Round: 1
 --- !u!1 &2099678819
