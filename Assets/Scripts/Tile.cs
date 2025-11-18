@@ -7,6 +7,9 @@ public class Tile : MonoBehaviour
 
     public GameManager GameManager;
     public GameObject CurrentPiece;
+    public bool IsOccupied { get => CurrentPiece != null; }
+    public int X;
+    public int Y;
 
     void Start()
     {

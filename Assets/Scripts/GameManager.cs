@@ -18,12 +18,11 @@ public class GameManager : MonoBehaviour
     {
         RoundText.text = "Round: " + currentRound;
         PlayerText.text = "Player: " + currentPlayer;
-        for (int i = 0; i < 9; i++)
+        foreach (Transform child in Board.transform)
         {
-            for (int j = 0; j < 9; j++)
-            {
-                boardState[i, j] = Board.transform.Find($"{i},{j}").gameObject;
-            }
+            GameObject gameObject = child.gameObject;
+            Tile tile = gameObject.GetComponent<Tile>();
+            boardState[tile.X, tile.Y] = gameObject;
         }
     }
 
