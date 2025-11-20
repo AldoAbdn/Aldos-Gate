@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class Tile : MonoBehaviour
 {
     private Color originalColor;
+    private InputAction interactAction;
 
     public GameManager GameManager;
     public GameObject CurrentPiece;
@@ -14,25 +15,45 @@ public class Tile : MonoBehaviour
     void Start()
     {
         originalColor = this.gameObject.GetComponent<SpriteRenderer>().color;
+        interactAction = InputSystem.actions.FindAction("Attack");
     }
 
     void Update()
     {
-        Ray mouseRay = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-        RaycastHit2D raycastHit2D = Physics2D.Raycast(mouseRay.origin, mouseRay.direction);
-        Collider2D clickedCollider = raycastHit2D ? raycastHit2D.collider : null;
-        if (clickedCollider)
+        if (interactAction.WasPerformedThisFrame())
         {
-            clickedCollider.GetComponent<SpriteRenderer>().color = Color.yellow;
+            if (WasColliderHit())
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+            }
+            else
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().color = originalColor;
+            }
         }
-        else
+
+        if (interactAction.WasCompletedThisFrame())
         {
-            this.gameObject.GetComponent<SpriteRenderer>().color = originalColor;
+            if (WasColliderHit())
+            {
+                GameManager.NextPlayer();
+                this.gameObject.GetComponent<SpriteRenderer>().color = originalColor;
+            }
         }
     }
 
-    private void OnMouseDown()
+    bool WasColliderHit()
     {
-        GameManager.NextPlayer();
+        Ray mouseRay = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        RaycastHit2D raycastHit2D = Physics2D.Raycast(mouseRay.origin, mouseRay.direction);
+        Collider2D clickedCollider = raycastHit2D ? raycastHit2D.collider : null;
+        if (clickedCollider == this.gameObject.GetComponent<Collider2D>())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
