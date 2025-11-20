@@ -85,9 +85,9 @@ public class GameManager : MonoBehaviour
         return surroundingTiles;
     }
 
-    public IList<GameObject> GetSurroundingTileGameObjects(int x, int y)
+    public IList<GameObject> GetSurroundingTileGameObjects(int xCoordinate, int yCoordinate)
     {
-        GameObject centretile = boardState[x, y];
+        GameObject centretile = boardState[xCoordinate, yCoordinate];
         Tile centerTileComponent = centretile.GetComponent<Tile>();
         List<GameObject> surroundingTiles = new List<GameObject>();
         int X = centerTileComponent.X;
