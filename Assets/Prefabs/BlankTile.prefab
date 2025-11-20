@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6085867019275027099}
   - component: {fileID: 8156452964348348512}
   - component: {fileID: 7802201785487249807}
-  - component: {fileID: 4439060776453741975}
   - component: {fileID: 1662161007051078501}
   - component: {fileID: 8965473192991219569}
   m_Layer: 0
@@ -121,22 +120,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &4439060776453741975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498609763916503342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  GameManager: {fileID: 0}
-  CurrentPiece: {fileID: 0}
-  X: 3
-  Y: 7
 --- !u!58 &1662161007051078501
 CircleCollider2D:
   m_ObjectHideFlags: 0

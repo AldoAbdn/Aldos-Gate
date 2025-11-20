@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6085867019275027099}
   - component: {fileID: 8156452964348348512}
-  - component: {fileID: 6998522786760890951}
   - component: {fileID: 7802201785487249807}
   - component: {fileID: 4439060776453741975}
   - component: {fileID: 1662161007051078501}
@@ -94,22 +93,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6998522786760890951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498609763916503342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf223d38f9ff6434d83c760f07becbb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tile
-  GameManager: {fileID: 0}
-  CurrentPiece: {fileID: 0}
-  X: 0
-  Y: 0
 --- !u!50 &7802201785487249807
 Rigidbody2D:
   serializedVersion: 5
