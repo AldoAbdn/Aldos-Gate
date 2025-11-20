@@ -1,22 +1,25 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private Player currentPlayer;
     private int currentRound = 1;
-    private int currentPlayer = 1;
     private GameObject[,] boardState = new GameObject[9,9];
 
     public GameObject Board;
-    public int Players = 2;
+    public GameObject SelectedTile;
+    public Player[] Players;
     public TextMeshProUGUI RoundText;
     public TextMeshProUGUI PlayerText;
 
     void Start()
     {
+        currentPlayer = Players[0];
         RoundText.text = "Round: " + currentRound;
-        PlayerText.text = "Player: " + currentPlayer;
+        PlayerText.text = "Player: " + currentPlayer.PlayerName;
         foreach (Transform child in Board.transform)
         {
             GameObject gameObject = child.gameObject;
@@ -25,21 +28,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        
-    }
-
     public void NextPlayer()
     {
-        currentPlayer++;
-        PlayerText.text = "Player: " + currentPlayer;
-        if (currentPlayer > Players)
+        int currentIndex = Array.IndexOf(Players, currentPlayer);
+        int nextIndex = currentIndex + 1;
+        if (nextIndex >= Players.Length)
         {
-            currentPlayer = 1;
-            PlayerText.text = "Player: " + currentPlayer;
             NextRound();
         }
+        currentIndex = (currentIndex + 1) % Players.Length;
+        currentPlayer = Players[currentIndex];
+        PlayerText.text = "Player: " + currentPlayer.name;
     }
 
     public void NextRound()
