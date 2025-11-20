@@ -986,6 +986,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3203543699260939328, guid: 073850555581bdf4b9ab7ef568034587, type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 1835169823}
     - target: {fileID: 4367055979454971206, guid: 073850555581bdf4b9ab7ef568034587, type: 3}
       propertyPath: m_Name
       value: Anarchist
@@ -1047,6 +1051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: User
       objectReference: {fileID: 0}
+    - target: {fileID: 8276646520045377688, guid: db5f4376ac5bb204984c0910ee7a860b, type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 1835169823}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1410,6 +1418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Agent
       objectReference: {fileID: 0}
+    - target: {fileID: 8578248847254700880, guid: a4dca54347bacd14c840edc477749be2, type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 1835169823}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
