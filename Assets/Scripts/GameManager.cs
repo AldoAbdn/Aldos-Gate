@@ -58,8 +58,36 @@ public class GameManager : MonoBehaviour
         // Implement game over logic here
     }
 
-    private IList<GameObject> GetSurroundingTileGameObjects(GameObject centretile)
+    public GameObject GetGameObjectAtPosition(int x, int y)
     {
+        return boardState[x, y];
+    }
+
+    public IList<GameObject> GetSurroundingTileGameObjects(GameObject centretile)
+    {
+        Tile centerTileComponent = centretile.GetComponent<Tile>();
+        List<GameObject> surroundingTiles = new List<GameObject>();
+        int X = centerTileComponent.X;
+        int Y = centerTileComponent.Y;
+        for (int x = X - 1; x <= X + 1; x++)
+        {
+            for (int y = Y - 1; y <= Y + 1; y++)
+            {
+                if (x >= 0 && x < 9 && y >= 0 && y < 9)
+                {
+                    if (x != X || y != Y)
+                    {
+                        surroundingTiles.Add(boardState[x, y]);
+                    }
+                }
+            }
+        }
+        return surroundingTiles;
+    }
+
+    public IList<GameObject> GetSurroundingTileGameObjects(int x, int y)
+    {
+        GameObject centretile = boardState[x, y];
         Tile centerTileComponent = centretile.GetComponent<Tile>();
         List<GameObject> surroundingTiles = new List<GameObject>();
         int X = centerTileComponent.X;
