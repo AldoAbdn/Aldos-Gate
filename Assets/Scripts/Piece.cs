@@ -11,7 +11,7 @@ public abstract class Piece : MonoBehaviour
 
     public void Start()
     {
-        originalColour = GetComponent<Renderer>().material.color;
+        originalColour = this.gameObject.GetComponent<SpriteRenderer>().color;
         interactAction = InputSystem.actions.FindAction("Attack");
         UpdateVisual();
     }
