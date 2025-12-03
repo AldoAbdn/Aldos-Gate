@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     private GameObject[,] boardState = new GameObject[9,9];
     private RoundState roundState = RoundState.Placing;
     private IList<RoundWinner> roundWins = new List<RoundWinner>();
+    private bool startTileSelected = false;
+    private bool startPieceFlipped = false;
+    private bool ignoreNextPieceFlip = false;
 
     public GameObject Board;
     public GameObject SelectedTile;
@@ -38,22 +41,91 @@ public class GameManager : MonoBehaviour
         if (roundState == RoundState.Placing)
         {
             Tile tileComponent = tile.GetComponent<Tile>();
+
+            // Do not allow placement on blank tiles
             if (tileComponent is BlankTile)
             {
                 return;
             }
 
-            if (SelectedPiece != null && !tileComponent.IsOccupied)
+            // Starting piece placement
+            if (!startTileSelected)
             {
-                SelectedPiece.transform.position = tile.transform.position;
-                SelectedPiece.transform.position += new Vector3(0, 0, -0.1f);
-                tileComponent.CurrentPiece = SelectedPiece;
-                Piece pieceComponent = SelectedPiece.GetComponent<Piece>();
-                pieceComponent.Flip();
-                SelectedPiece = null;
-                NextPlayer();
+                if (tileComponent is RoundTile)
+                {
+                    RoundTile roundTileComponent = tileComponent as RoundTile;
+                    if (roundTileComponent.IsOccupied || roundTileComponent.IsEnd || roundTileComponent.Round != currentRound)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        PlaceSelectedPiece(tileComponent);
+                        startTileSelected = true;
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            } 
+            else
+            {
+                // Don't allow placement on round start tiles or occupied round tiles
+                if (tileComponent is RoundTile)
+                {
+                    RoundTile rountTileComponent = tileComponent as RoundTile;
+                    if (rountTileComponent.IsStart || rountTileComponent.IsOccupied)
+                    {
+                        return;
+                    } 
+                    else if (rountTileComponent.Round == currentRound && rountTileComponent.IsEnd)
+                    {
+                        // Allow placement on end round tile
+                        PlaceSelectedPiece(tileComponent);
+                        // Flipping round starts
+                        roundState = RoundState.Flipping;
+                        return;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+
+                // Normal piece placement
+                PlaceSelectedPiece(tileComponent);
             }
         }
+    }
+
+    private void PlacePiece(Tile tile, GameObject piece)
+    {
+        if (piece != null && !tile.IsOccupied)
+        {
+            piece.transform.position = tile.transform.position;
+            piece.transform.position += new Vector3(0, 0, -0.1f);
+            tile.CurrentPiece = piece;
+            Piece pieceComponent = piece.GetComponent<Piece>();
+            pieceComponent.Flip();
+            // Check for anarchist win condition
+            foreach (Player player in Players)
+            {
+                if (player.Pieces.Count() == 0)
+                {
+                    roundWins.Add(RoundWinner.Anarchist);
+                    GameOver();
+                    return;
+                }
+            }
+            NextPlayer();
+        }
+    }
+
+    private void PlaceSelectedPiece(Tile tile)
+    {
+        PlacePiece(tile, SelectedPiece);
+        SelectedPiece = null;
     }
 
     public void PieceClicked(GameObject piece)
@@ -67,38 +139,74 @@ public class GameManager : MonoBehaviour
             }
 
             SelectedPiece = piece;
-
-            // TODO:Check if last piece placed (Flipping round start)
-            bool lastPiecePlaced = false; // Placeholder
-            if (lastPiecePlaced)
-            {
-                roundState = RoundState.Flipping;
-            }
-
-            // TODO:Check if any player has run out of pieces (Game Over, Anarchist wins)
-            foreach (Player player in Players)
-            {
-                if (player.Pieces.Count() == 0)
-                {
-                    roundWins.Add(RoundWinner.Anarchist);
-                    GameOver();
-                }
-            }
         }
         else if (roundState == RoundState.Flipping)
         {
             Piece pieceComponent = piece.GetComponent<Piece>();
             if (!pieceComponent.IsFlipped)
             {
-                pieceComponent.Flip();
-
-                // TODO: Check if last piece flipped, check who won round
-                bool lastPieceFlipped = false; // Placeholder
-                if (lastPieceFlipped)
+                if (pieceComponent.Tile is RoundTile)
                 {
-                    NextRound(RoundWinner.User); // Placeholder
+                    RoundTile roundTileComponent = pieceComponent.Tile as RoundTile;
+                    if (roundTileComponent.IsStart && !startPieceFlipped)
+                    {
+                        pieceComponent.Flip();
+                        startPieceFlipped = true;
+                    }
+                    else if (roundTileComponent.IsEnd)
+                    {
+                        // Check for round win conditions
+                        if (pieceComponent is Hack && !ignoreNextPieceFlip)
+                        {
+                            pieceComponent.Flip();
+                            NextRound(RoundWinner.Agent);
+                        }
+                        else
+                        {
+                            pieceComponent.Flip();
+                            NextRound(RoundWinner.User);
+                        }
+                    }
                 }
+                pieceComponent.Flip();
+                if (ignoreNextPieceFlip)
+                {
+                    ignoreNextPieceFlip = false;
+                    return;
+                }
+                ApplyPiecePower(pieceComponent);
             }
+        }
+    }
+
+    private void ApplyPiecePower(Piece piece)
+    {
+        if (piece is Cell)
+        {
+            return;
+        } 
+        else if (piece is Hack)
+        {
+            NextRound(RoundWinner.Agent);
+        }
+        else if (piece is Discard) {
+            // TODO: Discard Power: Lose one piece
+            return;
+        }
+        else if (piece is Swap)
+        {
+            // TODO: Swap Power: Swap two pieces
+            return;
+        }
+        else if (piece is Switch)
+        {
+            // TODO: Switch Power: Switch pieces
+            return;
+        }
+        else if (piece is DoubleCell)
+        {
+            ignoreNextPieceFlip = true;
+            return;
         }
     }
 
@@ -116,6 +224,9 @@ public class GameManager : MonoBehaviour
         roundWins.Add(roundWinner);
         currentRound++;
         roundState = RoundState.Placing;
+        startTileSelected = false;
+        startPieceFlipped = false;
+        ignoreNextPieceFlip = false;
         RoundText.text = "Round: " + currentRound;
         if (currentRound > 3)
         {

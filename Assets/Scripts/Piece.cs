@@ -8,6 +8,7 @@ public abstract class Piece : MonoBehaviour
 
     public GameManager GameManager;
     public bool IsFlipped = false;
+    public Tile Tile;
 
     public void Start()
     {
