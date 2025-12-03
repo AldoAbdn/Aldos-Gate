@@ -43,6 +43,8 @@ public class GameManager : MonoBehaviour
                 SelectedPiece.transform.position = tile.transform.position;
                 SelectedPiece.transform.position += new Vector3(0, 0, -0.1f);
                 tileComponent.CurrentPiece = SelectedPiece;
+                Piece pieceComponent = SelectedPiece.GetComponent<Piece>();
+                pieceComponent.Flip();
                 SelectedPiece = null;
                 NextPlayer();
             }
@@ -53,6 +55,12 @@ public class GameManager : MonoBehaviour
     {
         if (roundState == RoundState.Placing)
         {
+            Piece pieceComponent = piece.GetComponent<Piece>();
+            if (pieceComponent.IsFlipped)
+            {
+                return;
+            }
+
             SelectedPiece = piece;
 
             // TODO:Check if last piece placed (Flipping round start)
