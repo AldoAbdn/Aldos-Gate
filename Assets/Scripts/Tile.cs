@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class Tile : MonoBehaviour
 {
-    private Color originalColor;
+    private Color originalColour;
     private InputAction interactAction;
 
     public GameManager GameManager;
@@ -14,7 +14,7 @@ public class Tile : MonoBehaviour
 
     void Start()
     {
-        originalColor = this.gameObject.GetComponent<SpriteRenderer>().color;
+        originalColour = this.gameObject.GetComponent<SpriteRenderer>().color;
         interactAction = InputSystem.actions.FindAction("Attack");
     }
 
@@ -28,7 +28,7 @@ public class Tile : MonoBehaviour
             }
             else
             {
-                this.gameObject.GetComponent<SpriteRenderer>().color = originalColor;
+                this.gameObject.GetComponent<SpriteRenderer>().color = originalColour;
             }
         }
 
@@ -36,8 +36,8 @@ public class Tile : MonoBehaviour
         {
             if (WasColliderHit())
             {
-                GameManager.NextPlayer();
-                this.gameObject.GetComponent<SpriteRenderer>().color = originalColor;
+                GameManager.TileClicked(this.gameObject);
+                this.gameObject.GetComponent<SpriteRenderer>().color = originalColour;
             }
         }
     }
