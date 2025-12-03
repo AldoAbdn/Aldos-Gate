@@ -38,6 +38,11 @@ public class GameManager : MonoBehaviour
         if (roundState == RoundState.Placing)
         {
             Tile tileComponent = tile.GetComponent<Tile>();
+            if (tileComponent is BlankTile)
+            {
+                return;
+            }
+
             if (SelectedPiece != null && !tileComponent.IsOccupied)
             {
                 SelectedPiece.transform.position = tile.transform.position;
