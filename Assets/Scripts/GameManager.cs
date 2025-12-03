@@ -78,14 +78,22 @@ public class GameManager : MonoBehaviour
                     if (rountTileComponent.IsStart || rountTileComponent.IsOccupied)
                     {
                         return;
-                    } 
+                    }
                     else if (rountTileComponent.Round == currentRound && rountTileComponent.IsEnd)
                     {
-                        // Allow placement on end round tile
-                        PlaceSelectedPiece(tileComponent);
-                        // Flipping round starts
-                        roundState = RoundState.Flipping;
-                        return;
+                        // Check if there is a path from the start tile to this end tile
+                        if (FullPathExists())
+                        {
+                            // Allow placement on end round tile
+                            PlaceSelectedPiece(tileComponent);
+                            // Flipping round starts
+                            roundState = RoundState.Flipping;
+                            return;
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
                     else
                     {
@@ -97,6 +105,12 @@ public class GameManager : MonoBehaviour
                 PlaceSelectedPiece(tileComponent);
             }
         }
+    }
+
+    private bool FullPathExists()
+    {
+        // TODO: Implement pathfinding algorithm to check for full path from start to end
+        return false;
     }
 
     private void PlacePiece(Tile tile, GameObject piece)
