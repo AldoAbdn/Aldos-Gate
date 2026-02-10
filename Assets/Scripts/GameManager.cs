@@ -195,32 +195,29 @@ public class GameManager : MonoBehaviour
 
     private void ApplyPiecePower(Piece piece)
     {
-        if (piece is Cell)
+        switch (piece)
         {
-            return;
-        } 
-        else if (piece is Hack)
-        {
-            NextRound(RoundWinner.Agent);
-        }
-        else if (piece is Discard) {
-            // TODO: Discard Power: Lose one piece
-            return;
-        }
-        else if (piece is Swap)
-        {
-            // TODO: Swap Power: Swap two pieces
-            return;
-        }
-        else if (piece is Switch)
-        {
-            // TODO: Switch Power: Switch pieces
-            return;
-        }
-        else if (piece is DoubleCell)
-        {
-            ignoreNextPieceFlip = true;
-            return;
+            case Hack hack:
+                // Hack Power: Win the round immediately
+                NextRound(RoundWinner.Agent);
+                break;
+            case Discard discard:
+                // Discard Power: Lose one piece
+                break;
+            case Swap swap:
+                // Swap Power: Swap two pieces
+                break;
+            case Switch switchPiece:
+                // Switch Power: Switch pieces
+                break;
+            case DoubleCell doubleCell:
+                // Double Cell Power: Flip another piece
+                ignoreNextPieceFlip = true;
+                break;
+            case Cell cell:
+                // No power, do nothing
+                break;
+
         }
     }
 
