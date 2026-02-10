@@ -74,12 +74,12 @@ public class GameManager : MonoBehaviour
                 // Don't allow placement on round start tiles or occupied round tiles
                 if (tileComponent is RoundTile)
                 {
-                    RoundTile rountTileComponent = tileComponent as RoundTile;
-                    if (rountTileComponent.IsStart || rountTileComponent.IsOccupied)
+                    RoundTile roundTileComponent = tileComponent as RoundTile;
+                    if (roundTileComponent.IsStart || roundTileComponent.IsOccupied)
                     {
                         return;
                     }
-                    else if (rountTileComponent.Round == currentRound && rountTileComponent.IsEnd)
+                    else if (roundTileComponent.Round == currentRound && roundTileComponent.IsEnd)
                     {
                         // Check if there is a path from the start tile to this end tile
                         if (FullPathExists())
