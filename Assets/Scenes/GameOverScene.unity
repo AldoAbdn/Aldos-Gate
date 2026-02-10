@@ -917,6 +917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 361f761453ca15a4ba7a9ad1488c7300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOverManager
+  PlayerNameText: {fileID: 392009123}
+  PlayerTypeText: {fileID: 766659192}
 --- !u!4 &1835329382
 Transform:
   m_ObjectHideFlags: 0
