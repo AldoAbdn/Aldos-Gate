@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public Player[] Players;
     public TextMeshProUGUI RoundText;
     public TextMeshProUGUI PlayerText;
+    public NavigationManager NavigationManager;
 
     void Start()
     {
@@ -245,23 +246,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         // TODO: Display game over screen
         if (roundWins.Contains(RoundWinner.Anarchist))
         {
-            Debug.Log("Anarchist Wins!");
+            NavigationManager.NavigateToGameOverScene("Anarchist", (int)RoundWinner.Anarchist);
         }
         else if (roundWins.Count(rw => rw == RoundWinner.Agent) >= 2)
         {
-            Debug.Log("Agent Wins!");
+            NavigationManager.NavigateToGameOverScene("Agent", (int)RoundWinner.Agent);
         }
         else if (roundWins.Count(rw => rw == RoundWinner.User) >= 2)
         {
-            Debug.Log("User Wins!");
-        } else
+            NavigationManager.NavigateToGameOverScene("User", (int)RoundWinner.User);
+        } 
+        else
         {
-            Debug.Log("Game Over");
+            NavigationManager.NavigateToGameOverScene("Draw", -1);
         }
     }
 
@@ -315,13 +317,13 @@ public class GameManager : MonoBehaviour
         return surroundingTiles;
     }
 
-    private enum RoundState
+    public enum RoundState
     {
         Placing,
         Flipping,
     }
 
-    private enum RoundWinner
+    public enum RoundWinner
     {
         Anarchist,
         Agent,
