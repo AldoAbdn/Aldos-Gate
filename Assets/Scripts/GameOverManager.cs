@@ -14,9 +14,11 @@ public class GameOverManager : MonoBehaviour
         if (playerType == -1)
         {
             PlayerTypeText.text = "It's a Draw!";
-            return;
         }
-        string playerTypeString = roundWinner.ToString();
-        PlayerTypeText.text = $"{playerTypeString} Won the Game";
+        else
+        {
+            string playerTypeString = roundWinner.ToString();
+            PlayerTypeText.text = $"{playerTypeString} Won the Game";
+        }
     }
 }
