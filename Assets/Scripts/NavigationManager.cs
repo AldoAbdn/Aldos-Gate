@@ -1,10 +1,16 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class NavigationManager : MonoBehaviour
-{   
-    public void NavigateToGameScene()
+{
+    public void NavigateToGameScene(List<string> playerNames, int numPlayers)
     {
+        for (int i = 1; i < numPlayers; i++)
+        {
+            PlayerPrefs.SetString($"PlayerName{i}", playerNames[i]);
+        }
+
         SceneManager.LoadScene("AldosGate2DScene");
     }
 
