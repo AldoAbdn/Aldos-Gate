@@ -11,11 +11,12 @@ public class MainMenuManager : MonoBehaviour
     public TMP_Dropdown NumberOfPlayersDropdown;
     public GameObject PlayerFourInputField;
     public GameObject PlayerFiveInputField;
-    public TextMeshProUGUI PlayerOneText;
-    public TextMeshProUGUI PlayerTwoText;
-    public TextMeshProUGUI PlayerThreeText;
-    public TextMeshProUGUI PlayerFourText;
-    public TextMeshProUGUI PlayerFiveText;
+    public TMP_InputField PlayerOneText;
+    public TMP_InputField PlayerTwoText;
+    public TMP_InputField PlayerThreeText;
+    public TMP_InputField PlayerFourText;
+    public TMP_InputField PlayerFiveText;
+    public GameObject StartButton;
     public int NumberOfPlayers;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,8 +43,6 @@ public class MainMenuManager : MonoBehaviour
         {
             PlayerFourInputField.SetActive(true);
         }
-
-
         if (NumberOfPlayers < 5)
         {
             PlayerFiveInputField.SetActive(false);
@@ -51,6 +50,38 @@ public class MainMenuManager : MonoBehaviour
         else
         {
             PlayerFiveInputField.SetActive(true);
+        }
+        CheckCanLoadGame();
+    }
+
+    public void CheckCanLoadGame()
+    {
+        if (!string.IsNullOrEmpty(PlayerOneText.text) && !string.IsNullOrEmpty(PlayerTwoText.text) && !string.IsNullOrEmpty(PlayerThreeText.text))
+        {
+            if (NumberOfPlayers >= 4)
+            {
+                if (string.IsNullOrEmpty(PlayerFourText.text.ToString()))
+                {
+                    StartButton.SetActive(false);
+                    return;
+                }
+            }
+            if (NumberOfPlayers >= 5)
+            {
+                if (string.IsNullOrEmpty(PlayerFiveText.text))
+                {
+                    StartButton.SetActive(false);
+                    return;
+                }
+            }
+
+            // Enable Start Button
+            StartButton.SetActive(true);
+        }
+        else
+        {
+            // Disable Start Button
+            StartButton.SetActive(false);
         }
     }
 
