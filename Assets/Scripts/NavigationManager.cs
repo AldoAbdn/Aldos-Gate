@@ -6,9 +6,16 @@ public class NavigationManager : MonoBehaviour
 {
     public void NavigateToGameScene(List<string> playerNames, int numPlayers)
     {
-        for (int i = 1; i < numPlayers; i++)
+        for (int i = 1; i <= 5; i++)
         {
-            PlayerPrefs.SetString($"PlayerName{i}", playerNames[i]);
+            if (i <= numPlayers)
+            {
+                PlayerPrefs.SetString($"PlayerName{i}", playerNames[i-1]);
+            }
+            else
+            {
+                PlayerPrefs.SetString($"PlayerName{i}", string.Empty);
+            }
         }
 
         SceneManager.LoadScene("AldosGate2DScene");

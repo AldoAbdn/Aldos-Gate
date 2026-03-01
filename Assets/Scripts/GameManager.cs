@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private List<Player> players = new List<Player>();
     private Player currentPlayer;
     private int currentRound = 1;
     private GameObject[,] boardState = new GameObject[9,9];
@@ -18,14 +19,36 @@ public class GameManager : MonoBehaviour
     public GameObject Board;
     public GameObject SelectedTile;
     public GameObject SelectedPiece;
-    public Player[] Players;
     public TextMeshProUGUI RoundText;
     public TextMeshProUGUI PlayerText;
     public NavigationManager NavigationManager;
 
     void Start()
     {
-        currentPlayer = Players[0];
+        for (int i = 1; i <= 5; i++)
+        {
+            string playerName = PlayerPrefs.GetString($"PlayerName{i}", string.Empty);
+            if (!string.IsNullOrEmpty(playerName))
+            {
+                switch (i)
+                {
+                    case 1:
+                    case 4:
+                        players.Add(new User(playerName));
+                        break;
+                    case 2:
+                    case 5:
+                        players.Add(new Agent(playerName));
+                        break;
+                    case 3:
+                        players.Add(new Anarchist(playerName));
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        currentPlayer = players[0];
         RoundText.text = "Round: " + currentRound;
         PlayerText.text = "Player: " + currentPlayer.PlayerName;
         foreach (Transform child in Board.transform)
@@ -124,7 +147,7 @@ public class GameManager : MonoBehaviour
             Piece pieceComponent = piece.GetComponent<Piece>();
             pieceComponent.Flip();
             // Check for anarchist win condition
-            foreach (Player player in Players)
+            foreach (Player player in players)
             {
                 if (player.Pieces.Count() == 0)
                 {
@@ -224,10 +247,10 @@ public class GameManager : MonoBehaviour
 
     private void NextPlayer()
     {
-        int currentIndex = Array.IndexOf(Players, currentPlayer);
+        int currentIndex = players.IndexOf(currentPlayer);
         int nextIndex = currentIndex + 1;
-        currentIndex = (currentIndex + 1) % Players.Length;
-        currentPlayer = Players[currentIndex];
+        currentIndex = (currentIndex + 1) % players.Count;
+        currentPlayer = players[currentIndex];
         PlayerText.text = "Player: " + currentPlayer.name;
     }
 
