@@ -9,13 +9,14 @@ public class MainMenuManager : MonoBehaviour
     public Canvas PlayerSelectCanvas;
     public NavigationManager NavigationManager;
     public TMP_Dropdown NumberOfPlayersDropdown;
+    public GameObject PlayerFourInputField;
+    public GameObject PlayerFiveInputField;
     public TextMeshProUGUI PlayerOneText;
     public TextMeshProUGUI PlayerTwoText;
     public TextMeshProUGUI PlayerThreeText;
     public TextMeshProUGUI PlayerFourText;
     public TextMeshProUGUI PlayerFiveText;
     public int NumberOfPlayers;
-    private List<string> PlayerNames = new List<string>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,27 +30,27 @@ public class MainMenuManager : MonoBehaviour
         
     }
 
-    public void SetNumberOfPlayers()
+    public void SetNumberOfPlayers(int value)
     {
-        NumberOfPlayers = NumberOfPlayersDropdown.value;
+        NumberOfPlayers = NumberOfPlayersDropdown.value + 3; // Add 3 to the dropdown value to get the actual number of players
         // Disable player text fields based on number of players
         if (NumberOfPlayers < 4)
         {
-            PlayerFourText.gameObject.SetActive(false);
+            PlayerFourInputField.SetActive(false);
         }
         else
         {
-            PlayerFourText.gameObject.SetActive(true);
+            PlayerFourInputField.SetActive(true);
         }
 
 
         if (NumberOfPlayers < 5)
         {
-            PlayerFiveText.gameObject.SetActive(false);
+            PlayerFiveInputField.SetActive(false);
         } 
         else
         {
-            PlayerFiveText.gameObject.SetActive(true);
+            PlayerFiveInputField.SetActive(true);
         }
     }
 
@@ -63,26 +64,25 @@ public class MainMenuManager : MonoBehaviour
     {
         NewGameCanvas.gameObject.SetActive(true);
         PlayerSelectCanvas.gameObject.SetActive(false);
-        Console.WriteLine("Test");
         ResetPlayerSelect();
-        Console.WriteLine("Test2");
     }
 
     public void LoadGame()
     {
-        PlayerNames.Clear();
-        PlayerNames.Add(PlayerOneText.text);
-        PlayerNames.Add(PlayerTwoText.text);
-        PlayerNames.Add(PlayerThreeText.text);
+        List<string> playerNames = new List<string>();
+        playerNames.Clear();
+        playerNames.Add(PlayerOneText.text);
+        playerNames.Add(PlayerTwoText.text);
+        playerNames.Add(PlayerThreeText.text);
         if (NumberOfPlayers >= 4)
         {
-            PlayerNames.Add(PlayerFourText.text);
+            playerNames.Add(PlayerFourText.text);
         }
         if (NumberOfPlayers >= 5)
         {
-            PlayerNames.Add(PlayerFiveText.text);
+            playerNames.Add(PlayerFiveText.text);
         }
-        NavigationManager.NavigateToGameScene(PlayerNames, NumberOfPlayers);
+        NavigationManager.NavigateToGameScene(playerNames, NumberOfPlayers);
     }
 
     public void QuitGame()
@@ -98,13 +98,12 @@ public class MainMenuManager : MonoBehaviour
         PlayerThreeText.text = "";
         PlayerFourText.text = "";
         PlayerFiveText.text = "";
-        // Set player text fields to enabled true
-        PlayerOneText.gameObject.SetActive(true);
-        PlayerTwoText.gameObject.SetActive(true);
-        PlayerThreeText.gameObject.SetActive(true);
-        PlayerFourText.gameObject.SetActive(true);
-        PlayerFiveText.gameObject.SetActive(true);
+        // Set player input fields to active
+        PlayerFourInputField.SetActive(true);
+        PlayerFiveInputField.SetActive(true);
         // Set number of players to 5
         NumberOfPlayers = 5;
+        // Set dropdown value to 5 players
+        NumberOfPlayersDropdown.value = 2; // Set to 2 because the dropdown value starts at 0 for 3 players
     }
 }
