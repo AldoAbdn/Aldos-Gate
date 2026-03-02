@@ -406,6 +406,7 @@ public class GameManager : MonoBehaviour
 
     public enum RoundState
     {
+        Trading,
         Placing,
         Flipping,
     }
