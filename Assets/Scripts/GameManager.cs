@@ -25,6 +25,21 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        InitialisePlayers();
+        DistributePieces();
+        currentPlayer = players[0];
+        RoundText.text = "Round: " + currentRound;
+        PlayerText.text = "Player: " + currentPlayer.PlayerName;
+        foreach (Transform child in Board.transform)
+        {
+            GameObject gameObject = child.gameObject;
+            Tile tile = gameObject.GetComponent<Tile>();
+            boardState[tile.X, tile.Y] = gameObject;
+        }
+    }
+
+    private void InitialisePlayers()
+    {
         for (int i = 1; i <= 5; i++)
         {
             string playerName = PlayerPrefs.GetString($"PlayerName{i}", string.Empty);
@@ -53,14 +68,58 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        currentPlayer = players[0];
-        RoundText.text = "Round: " + currentRound;
-        PlayerText.text = "Player: " + currentPlayer.PlayerName;
-        foreach (Transform child in Board.transform)
+    }
+
+    private void DistributePieces()
+    {
+        List<Piece> pieces = new List<Piece>();
+        // Create pieces for distribution
+        // 50 Pieces for 5 players, 10 pieces each
+        // 48 Pices for 4 and 3 players
+        // Add 16 or 18 Cell pieces
+        int cellCount = players.Count == 5 ? 18 : 16;
+        for (int i = 0; i < cellCount; i++)
         {
-            GameObject gameObject = child.gameObject;
-            Tile tile = gameObject.GetComponent<Tile>();
-            boardState[tile.X, tile.Y] = gameObject;
+            Cell cell = gameObject.AddComponent<Cell>();
+            pieces.Add(cell);
+        }
+        // Add 12 Double Cell pieces
+        for (int i = 0; i < 12; i++)
+        {
+            DoubleCell doubleCell = gameObject.AddComponent<DoubleCell>();
+            pieces.Add(doubleCell);
+        }
+        // Add 6 Switch pieces
+        for (int i = 0; i < 6; i++)
+        {
+            Switch switchPiece = gameObject.AddComponent<Switch>();
+            pieces.Add(switchPiece);
+        }
+        // Add 6 Swap pieces
+        for (int i = 0; i < 6; i++)
+        {
+            Swap swap = gameObject.AddComponent<Swap>();
+            pieces.Add(swap);
+        }
+        // Add 6 Discard pieces
+        for (int i = 0; i < 6; i++)
+        {
+            Discard discard = gameObject.AddComponent<Discard>();
+            pieces.Add(discard);
+        }
+
+        // 10 pieces per player for 5 players, 12 pieces per player for 4 and 16 pieces per player for 3 players
+        int piecesPerPlayer = players.Count == 5 ? 10 : (players.Count == 4 ? 12 : 16);
+
+        foreach (Player player in players)
+        {
+            for (int i = 0; i < piecesPerPlayer; i++)
+            {
+                int randomIndex = UnityEngine.Random.Range(0, pieces.Count);
+                Piece piece = pieces[randomIndex];
+                player.Pieces.Add(piece);
+                pieces.RemoveAt(randomIndex);
+            }
         }
     }
 
