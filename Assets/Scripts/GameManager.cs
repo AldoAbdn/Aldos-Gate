@@ -34,14 +34,19 @@ public class GameManager : MonoBehaviour
                 {
                     case 1:
                     case 4:
-                        players.Add(new User(playerName));
+                        User user = gameObject.AddComponent<User>();
+                        user.PlayerName = playerName;
+                        players.Add(user);
                         break;
                     case 2:
                     case 5:
-                        players.Add(new Agent(playerName));
+                        Agent agent = gameObject.AddComponent<Agent>();
+                        agent.PlayerName = playerName;
+                        players.Add(agent);
                         break;
                     case 3:
-                        players.Add(new Anarchist(playerName));
+                        Anarchist anarchist = gameObject.AddComponent<Anarchist>();
+                        players.Add(anarchist);
                         break;
                     default:
                         break;
