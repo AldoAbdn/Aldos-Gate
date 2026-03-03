@@ -19,9 +19,18 @@ public class GameManager : MonoBehaviour
     public GameObject Board;
     public GameObject SelectedTile;
     public GameObject SelectedPiece;
+    public Transform Tiles;
     public TextMeshProUGUI RoundText;
     public TextMeshProUGUI PlayerText;
     public NavigationManager NavigationManager;
+    public User UserPrefab;
+    public Agent AgentPrefab;
+    public Anarchist AnarchistPrefab;
+    public Cell CellPrefab;
+    public DoubleCell DoubleCellPrefab;
+    public Switch SwitchPrefab;
+    public Swap SwapPrefab;
+    public Discard DiscardPrefab;
 
     void Start()
     {
@@ -49,18 +58,18 @@ public class GameManager : MonoBehaviour
                 {
                     case 1:
                     case 4:
-                        User user = gameObject.AddComponent<User>();
+                        User user = Instantiate(UserPrefab);
                         user.PlayerName = playerName;
                         players.Add(user);
                         break;
                     case 2:
                     case 5:
-                        Agent agent = gameObject.AddComponent<Agent>();
+                        Agent agent = Instantiate(AgentPrefab);
                         agent.PlayerName = playerName;
                         players.Add(agent);
                         break;
                     case 3:
-                        Anarchist anarchist = gameObject.AddComponent<Anarchist>();
+                        Anarchist anarchist = Instantiate(AnarchistPrefab);
                         players.Add(anarchist);
                         break;
                     default:
@@ -80,31 +89,36 @@ public class GameManager : MonoBehaviour
         int cellCount = players.Count == 5 ? 18 : 16;
         for (int i = 0; i < cellCount; i++)
         {
-            Cell cell = gameObject.AddComponent<Cell>();
+            Cell cell = Instantiate(CellPrefab, Tiles);
+            cell.GameManager = this;
             pieces.Add(cell);
         }
         // Add 12 Double Cell pieces
         for (int i = 0; i < 12; i++)
         {
-            DoubleCell doubleCell = gameObject.AddComponent<DoubleCell>();
+            DoubleCell doubleCell = Instantiate(DoubleCellPrefab, Tiles);
+            doubleCell.GameManager = this;
             pieces.Add(doubleCell);
         }
         // Add 6 Switch pieces
         for (int i = 0; i < 6; i++)
         {
-            Switch switchPiece = gameObject.AddComponent<Switch>();
+            Switch switchPiece = Instantiate(SwitchPrefab, Tiles);
+            switchPiece.GameManager = this;
             pieces.Add(switchPiece);
         }
         // Add 6 Swap pieces
         for (int i = 0; i < 6; i++)
         {
-            Swap swap = gameObject.AddComponent<Swap>();
+            Swap swap = Instantiate(SwapPrefab, Tiles);
+            swap.GameManager = this;
             pieces.Add(swap);
         }
         // Add 6 Discard pieces
-        for (int i = 0; i < 6; i++)
-        {
-            Discard discard = gameObject.AddComponent<Discard>();
+        for (int i = 0; i < 6; i++) 
+        { 
+            Discard discard = Instantiate(DiscardPrefab, Tiles);
+            discard.GameManager = this;
             pieces.Add(discard);
         }
 
@@ -115,6 +129,10 @@ public class GameManager : MonoBehaviour
         {
             for (int i = 0; i < piecesPerPlayer; i++)
             {
+                if (pieces.Count == 0)
+                {
+                    break;
+                }
                 int randomIndex = UnityEngine.Random.Range(0, pieces.Count);
                 Piece piece = pieces[randomIndex];
                 player.Pieces.Add(piece);

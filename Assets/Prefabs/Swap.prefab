@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5498609763916503342}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -168,3 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bce697e3bcf0640b900d9c1533019e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Swap
+  GameManager: {fileID: 0}
+  IsFlipped: 0
+  Tile: {fileID: 0}

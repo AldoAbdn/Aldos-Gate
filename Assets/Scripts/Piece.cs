@@ -10,7 +10,7 @@ public abstract class Piece : MonoBehaviour
     public bool IsFlipped = false;
     public Tile Tile;
 
-    public void Start()
+    void Start()
     {
         originalColour = this.gameObject.GetComponent<SpriteRenderer>().color;
         interactAction = InputSystem.actions.FindAction("Attack");
@@ -19,6 +19,11 @@ public abstract class Piece : MonoBehaviour
 
     void Update()
     {
+        if (interactAction == null)
+        {
+            return;
+        }
+
         if (interactAction.WasPerformedThisFrame())
         {
             if (WasColliderHit())
