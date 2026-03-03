@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -34,11 +33,15 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        // Setup players
         InitialisePlayers();
         DistributePieces();
+        // Set first player and round text
         currentPlayer = players[0];
+        ShowCurrentPlayerPieces();
         RoundText.text = "Round: " + currentRound;
         PlayerText.text = "Player: " + currentPlayer.PlayerName;
+        // Initialise board state
         foreach (Transform child in Board.transform)
         {
             GameObject gameObject = child.gameObject;
@@ -133,11 +136,38 @@ public class GameManager : MonoBehaviour
                 {
                     break;
                 }
-                int randomIndex = UnityEngine.Random.Range(0, pieces.Count);
+                int randomIndex = Random.Range(0, pieces.Count);
                 Piece piece = pieces[randomIndex];
                 player.Pieces.Add(piece);
                 pieces.RemoveAt(randomIndex);
             }
+        }
+
+        // Position pieces in player areas
+        foreach (Player player in players)
+        {
+            for (int i = 0; i < player.Pieces.Count; i++)
+            {
+                Piece piece = player.Pieces[i];
+                piece.transform.localPosition = new Vector3(0 + (0.5f*i), 0f , -i);
+                piece.gameObject.SetActive(false);
+            }
+        }
+    }
+
+    private void ShowCurrentPlayerPieces()
+    {
+        foreach (Player player in players)
+        {
+            foreach (Piece piece in player.Pieces)
+            {
+                piece.gameObject.SetActive(false);
+            }
+        }
+
+        foreach (Piece currentPlayerPieces in currentPlayer.Pieces)
+        {
+            currentPlayerPieces.gameObject.SetActive(true);
         }
     }
 
@@ -333,7 +363,8 @@ public class GameManager : MonoBehaviour
         int nextIndex = currentIndex + 1;
         currentIndex = (currentIndex + 1) % players.Count;
         currentPlayer = players[currentIndex];
-        PlayerText.text = "Player: " + currentPlayer.name;
+        ShowCurrentPlayerPieces();
+        PlayerText.text = "Player: " + currentPlayer.PlayerName;
     }
 
     private void NextRound(RoundWinner roundWinner)
